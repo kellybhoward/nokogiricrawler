@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('form').submit(function(){
         $('#loading').show();
         $.post($(this).attr('action'),$(this).serialize(),function(res){
+            $('#errors').empty();
             $('#loading').hide();
             //generate chart with voting data
             if(res.message){
