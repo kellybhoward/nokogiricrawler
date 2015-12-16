@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $('#loading').hide();
     $('form').submit(function(){
+        $('#errors').empty();
         $('#loading').show();
         $.post($(this).attr('action'),$(this).serialize(),function(res){
-            $('#errors').empty();
             $('#loading').hide();
             //generate chart with voting data
             if(res.message){
