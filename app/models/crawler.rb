@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
-# OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 class Crawler
     def obtain(url, num_keywords)
         doc = Nokogiri(open(url))
