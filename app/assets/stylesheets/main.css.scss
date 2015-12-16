@@ -1,0 +1,39 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+    font-family: Tahoma, sans-serif;
+    font-weight: lighter;
+}
+h3, p, form{
+    text-align: center;
+}
+input[type='submit']{
+    background-color: rgb(174, 138, 201);
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+}
+input[type='submit']:hover{
+    background-color: rgb(120, 93, 140);
+}
+input[type='submit']:focus{
+    outline: unset;
+}
+.git_logo{
+    width: 30px;
+    height: 100%;
+}
+#container{
+    width:100%;
+    height:400px;
+    position: absolute;
+    top: 150px;
+}
+.container{
+    width: 500px;
+    margin: 0px auto;
+}
