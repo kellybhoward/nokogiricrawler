@@ -5,7 +5,7 @@ $(document).ready(function(){
         $('#loading').show();
         $.post($(this).attr('action'),$(this).serialize(),function(res){
             $('#loading').hide();
-            //generate chart with voting data
+            //generate chart with keywords
             if(res.message){
                 $('#errors').html(res.message);
             }
