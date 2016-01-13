@@ -1,10 +1,13 @@
-<p>View source code here: <a href="https://github.com/kellybhoward/nokogiricrawler" target="_blank"><%= image_tag "git.png", :class=>"git_logo"%></a></p>
+<h2>Nokogiri Web Crawler</h2>
+<p>Enter a website URL to see the top 10 keywords from the its source code</p>
+<p>View project here: <a href="https://github.com/kellybhoward/nokogiricrawler" target="_blank"><%= image_tag "git.png", :class=>"git_logo"%></a></p>
 <div class="container">
     <form action="/" method="post">
         <label for="search">URL to analyze:</label>
         <input id="search" type="text" name="url"/>
-        <input type="submit" name="fetch" value="Fetch">
+        <input type="submit" name="fetch" value="Fetch"/>
     </form>
+    <p>( example: http://www.starwars.com )</p>
 </div>
 <div id="loading"><p>Loading...if this is a big website, it may take a moment...<p></div>
 <div id="errors"></div>
