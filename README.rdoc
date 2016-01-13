@@ -1,6 +1,6 @@
 == README
 
-See a live demo at this Public IP: http://54.183.227.90/
+See a live demo: crawler.kellybhoward.com
 
 * Ruby 2.2.1
 
